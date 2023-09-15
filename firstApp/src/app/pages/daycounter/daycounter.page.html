@@ -1,0 +1,33 @@
+
+
+<ion-content class="ion-padding">
+  <ion-card>
+    <!-- Close button -->
+    <ion-button fill=""  class="close-button" (click)="closeCard()">
+      <ion-icon name="close"></ion-icon>
+    </ion-button>
+
+    <div class="circle-container">
+      <div class="circle">
+        <div class="circle-inner">
+          <p class="day-count">{{ dayCount }}</p>
+          <p class="day-text">{{ dayCount === 1 ? 'day' : 'days' }}</p>
+          <ion-icon name="flame" class="flame-icon"></ion-icon>
+        </div>
+      </div>
+    </div>
+    <div class="days-of-week">
+      <span class="day" (click)="incrementDay('M')">M</span>
+      <span class="day" (click)="incrementDay('T')">T</span>
+      <span class="day" (click)="incrementDay('W')">W</span>
+      <span class="day" (click)="incrementDay('T')">T</span>
+      <span class="day" (click)="incrementDay('F')">F</span>
+      <span class="day" (click)="incrementDay('S')">S</span>
+    </div>
+    <ion-card-content >
+      You are crushing it! Keep it going and gather more precious memories!.
+      
+    </ion-card-content>
+  </ion-card>
+</ion-content>
+

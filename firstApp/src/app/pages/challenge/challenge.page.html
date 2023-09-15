@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color="success-contrast" class="fixed-header" (click)="gotoHome()">
+    <ion-buttons slot="start">
+      <ion-back-button title="" color="secondary"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="secondary" class="ion-text-center">Challenge</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img size="full" src="../../assets/littleImg1.jpg" alt="" />
+    <ion-card-header>
+      <ion-card-title class="expires">Expires in 7 hour 11 min</ion-card-title>
+      <br />
+      <ion-card-title>Sunshine with friends</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content class="description">
+      <ng-container *ngIf="showFullText; else truncatedContent">
+        {{fullText}}
+      </ng-container>
+      <ng-template #truncatedContent> {{ truncatedText }} </ng-template>
+      <div (click)="toggleShowFullText()" class="truncate">
+        {{ showFullText ? '... See Less' : 'See More' }}
+      </div>
+    </ion-card-content>
+
+    <ion-button class="takephoto" (click)="gotoHome()">Take Photo</ion-button>
+  </ion-card>
+</ion-content>

@@ -1,0 +1,61 @@
+
+
+
+ion-card-title {
+  font-size: 25px;
+
+  font-weight: bold;
+}
+
+.ion-text-center {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10;
+  z-index: 1000;
+  padding-top: 15px;
+  background: white;
+}
+
+ion-content {
+  padding-top: 56px;
+}
+
+.takephoto {
+  --background: orange;
+  --color: white;
+  font-size: 18px;
+  font-weight: 600;
+  width: 75vw;
+  margin: 35px;
+  
+}
+ion-button {
+  --border-radius: 10px;
+}
+
+ion-card {
+  margin: 80px 0 0;
+}
+.expires {
+  color: orange;
+}
+.description {
+  font-size: 18px;
+}
+img {
+  margin-top: 0;
+}
+ion-toolbar:last-of-type {
+  --border-width: 0;
+}
+.truncate {
+  font-size: 14px;
+  font-style: italic;
+}

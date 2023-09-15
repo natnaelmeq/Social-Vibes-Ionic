@@ -1,0 +1,38 @@
+
+
+.ion-text-center {
+  font-size: 35px;
+  font-weight: bolder;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10;
+  z-index: 1000;
+  padding-top: 15px;
+}
+
+.term-condition {
+  --background: rgb(0, 179, 255);
+  --color: white;
+  font-size: 20px;
+  font-weight: 600;
+  width: 75vw;
+
+  margin: 35px;
+}
+ion-button {
+  --border-radius: 10px;
+}
+
+ion-card {
+  margin: 120px 25px 0;
+}
+
+
+ion-toolbar:last-of-type {
+  --border-width: 0;
+}
